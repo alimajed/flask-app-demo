@@ -26,18 +26,17 @@ $ pip install -r requirements.txt
 ## Flask Configuration
 
 ### Example
-
 ```
 app = Flask(__name__)
 api = Api(app)
+```
 
 ### Database Configuration
-
 ```
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 ```
-#### Create Database Automatically if not created
 
+#### Create Database Automatically if not created
 ```
 @app.before_first_request
 def create_tables():
