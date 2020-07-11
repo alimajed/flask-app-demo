@@ -29,8 +29,7 @@ $ pip install -r requirements.txt
 
 ```
 app = Flask(__name__)
-app.config['DEBUG'] = True
-```
+api = Api(app)
 
 ### Database Configuration
 
