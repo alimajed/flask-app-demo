@@ -1,0 +1,16 @@
+<!doctype html>
+    <body>
+        <table border=1>
+            <tr>
+                <th>Movies</th>
+                <th>Directors</th>
+            </tr>
+            {% for movie in movies %}
+            <tr>
+                <td> {{ movie.name }} </td>
+                <td> {{ movie.director }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
